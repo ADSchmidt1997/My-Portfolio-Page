@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.nav-wrapper {
+    height: 5vh;
+    width: 100%;
+    background-color: #0779e4;
+    display: flex;
+}
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    width: 100%;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+nav a:hover {
+    color: #4cbbb9;
+    transition: .5s;
+}
+
+.nav-right {
+    justify-content: flex-end;
+}
+/*Header*/
+
+.header-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 140, 255, 0.5)), url("../images/coding-on-laptop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 95vh;
+
+}
+.header-text {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    color: white;
+}
+.header-text h1 {
+    font-size: 4rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5)
+}
+.header-social {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.fa {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px;
+  }
+.fa:hover {
+    color:#0779e4;
+    transition: ease-in-out .3s;
+    transform: translateY(-2px);
+}
+.scroll_down {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    font-size: 2em;
+    transform: translate(-50%, -20%);
+    color: white;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5)
+}
+/*ABOUT*/
+.about-wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about {
+order: 2;
+height: 100%;
+align-self: center;
+position: relative;
+flex-grow: 1;
+}
+.inner-about {
+    position: absolute;
+}
+.inner-about h1 {
+    font-size: 4rem;
+}
+.languages {
+    order: 1;
+    height: 100%;
+    position: relative;
+    flex-grow: 1;
+}
+.inner-languages {
+    position: absolute;
+    width: 15rem;
+    height: 25rem;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 2px rgba(0,0,0,.5);
+}
+.skills {
+    order: 3;
+    height: 100%;
+    position: relative;
+    flex-grow: 1;
+}
+.inner-skills {
+        position: absolute;
+        width: 15rem;
+        height: 25rem;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 0px 2px rgba(0,0,0,.5);
+}
+.skills ul, .languages ul {
+    list-style-type: none;
+}

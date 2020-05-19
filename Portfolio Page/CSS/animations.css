@@ -1,0 +1,52 @@
+ span {
+    width: 24px;
+    height: 24px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: rotate(-45deg);
+    animation: scroll 2s infinite;
+    text-align: center;
+    position: absolute;
+    left: 35%;
+    bottom: 5%;
+    
+}
+.triangle_1 {
+    width: 0;
+    height:0;
+    border-top: 47.5vh solid transparent;
+    border-left: 49.7vw solid #0779e4;
+    border-bottom: 47.5vh solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+}
+.triangle_2 {
+    width: 0;
+    height:0;
+    border-top: 47.5vh solid transparent;
+    border-right: 49.7vw solid #0779e4;
+    border-bottom: 47.5vh solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .5;
+}
+.scroll_down:hover, span:hover{
+    color: #0779e4;
+    border-color: #0779e4;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+}
+@keyframes scroll {
+    0% {
+       transform: rotate(-45deg) translate(0,0);
+    }
+    20% {
+        transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+        transform: rotate(-45deg) translate(0,0);
+    }
+}
