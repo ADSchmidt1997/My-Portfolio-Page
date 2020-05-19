@@ -21,6 +21,7 @@
     top: 0;
     left: 0;
     opacity: .5;
+    
 }
 .triangle_2 {
     width: 0;
@@ -32,7 +33,32 @@
     top: 0;
     right: 0;
     opacity: .5;
+    
 }
+.triangle_3 {
+    width: 0;
+    height:0;
+    border-right: 50vw solid transparent;
+    border-bottom: 100vh solid #0779e4;
+    border-left: 50vw solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: .5;
+}
+.triangle_4 {
+    width: 0;
+    height:0;
+    border-right: 50vw solid transparent;
+    border-top: 100vh solid #0779e4;
+    border-left: 50vw solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .5;
+    
+}
+
 .scroll_down:hover, span:hover{
     color: #0779e4;
     border-color: #0779e4;
