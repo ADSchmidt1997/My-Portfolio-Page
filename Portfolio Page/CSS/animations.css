@@ -65,6 +65,16 @@
     transition: ease-in-out .3s;
     cursor: pointer;
 }
+/*hr*/
+.hr-cards {
+    border: 0;
+    background-image: linear-gradient(to right, rgba(33, 153, 252, 0), rgba(255, 255, 255, 0.75), rgba(33, 153, 252, 0));
+    width: 30%;
+    height: 2px;
+    margin: auto;
+    animation: grow 2s infinite;
+}
+/*Keyframes*/
 @keyframes scroll {
     0% {
        transform: rotate(-45deg) translate(0,0);
@@ -74,5 +84,19 @@
     }
     40% {
         transform: rotate(-45deg) translate(0,0);
+    }
+}
+@keyframes grow {
+    0% {
+        width: 30%;
+        background-image: linear-gradient(to right, rgba(33, 153, 252, 0), rgba(255, 255, 255, 0.75), rgba(33, 153, 252, 0));
+    }
+    50% {
+        width: 40%;
+        background-image: linear-gradient(to right, rgba(33, 153, 252, 0), rgba(255, 255, 255, 0.75), rgba(33, 153, 252, 0));
+    }
+    100% {
+        width: 30%;
+        background-image: linear-gradient(to right, rgba(33, 153, 252, 0), rgba(255, 255, 255, 0.75), rgba(33, 153, 252, 0));
     }
 }
