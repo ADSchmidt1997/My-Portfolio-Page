@@ -9,6 +9,8 @@
     width: 100%;
     background-color: #0779e4;
     display: flex;
+    position: fixed;
+    z-index: 99999;
 }
 nav {
     width: 100%;
@@ -43,7 +45,8 @@ nav a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 95vh;
+    height: 100vh;
+    
 
 }
 .header-text {
@@ -191,26 +194,30 @@ flex-grow: 1;
     height: 100vh;
     display: flex;
     flex-direction: row;
+    background-image: linear-gradient(rgba(33, 153, 252, 0.5), rgba(0, 140, 255, 0.5)), url("../images/pencils-in-cup.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
 }
+
 .projects {
 position: absolute;
-top: 25%;
+top: 10%;
 left: 50%;
 transform: translate(-50%, -25%);
-font-size: 4rem;
+font-size: 3rem;
 }
 .project-cards {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-evenly;
     position: absolute;
     bottom: 15%;
     left: 50%;
     transform: translate(-50%, -15%);
-    background-image: linear-gradient(rgba(33, 153, 252, 0.5), rgba(0, 140, 255, 0.5));
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 90%;
 }
 .card ul {
@@ -219,15 +226,101 @@ font-size: 4rem;
 .card-wrapper {
     height: 400px;
     width: 200px;
-    background-color: rgba(2, 50, 88, 0.5);
-    border-radius: 10px;
+    background-color: rgba(2, 50, 88, 0.3);
+    box-shadow:  -10px 0px 2px rgba(2, 50, 88, .5);
+    transition: ease-in-out .5s;
+}
+.card-wrapper:hover {
+    height: 450px;
+    width: 250px;
+    transform: scale(1.1);
+    
 }
 .card {
-background-image: linear-gradient(rgba(33, 153, 252, 0.5), rgba(0, 140, 255, 0.5));
+background-image: linear-gradient(rgba(33, 153, 252, 0.3), rgba(0, 140, 255, 0.3));
 margin: 10px;
 height: 95%;
+text-align: center;
 }
 .card img {
-    height: 40%;
+    height: 50%;
     width: 100%;
+    padding: 10px 0;
+}
+.card h4, li {
+    padding-top: 10px;
+}
+.card h3 {
+    padding-top: 10px;
+}
+
+/*Contact*/
+.contact-wrapper {
+    height: 100vh;
+    position: relative;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+    background-image: linear-gradient(rgba(33, 153, 252, 0.5), rgba(0, 140, 255, 0.5)), url("../images/old-fashioned-telephone.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(rgba(33, 153, 252, 0.8), rgba(0, 140, 255, 0.8));
+    width: 60%;
+    border: 10px solid rgba(2, 50, 88, 0.3);
+    box-shadow:  -10px 0px 2px rgba(2, 50, 88, .5);
+}
+.contact h1 {
+    padding-bottom: 20px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.form input[type="text"],[type="email"], textarea {
+    margin: 10px 0;
+    border: none;
+    padding: 10px 0;
+    width: 80%;
+    background-color: rgba(2, 50, 88, 0.3);
+    color: white;
+    outline: none;
+    box-sizing: border-box;
+}
+.form input[type="text"]:focus,[type="email"]:focus, textarea:focus {
+    background-color: rgba(2, 50, 88, 0.8);
+    
+}
+::placeholder {
+    color: white;
+}
+.btn {
+    background-color: rgba(4, 9, 14, .5);
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 10px 0;
+    width: 80%;
+}
+.btn:hover {
+    background-color: rgba(4, 9, 14, .8)
+}
+.btn:active {
+    background-color: rgba(129, 183, 236, 0.8)
+}
+.footer-wrapper {
+    height: 5vh;
+    width: 100%;
+    background-color: #0779e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
