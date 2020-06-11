@@ -29,14 +29,14 @@
             <div class="triangle_1"></div>
             <div class="triangle_2"></div>
             <div class="header-text">
-                <h1>Alex Schmidt</h1>
+                <h1 id='headingName'>Alex Schmidt</h1>
             </div>
             <div class="header-social">
                 <a href="#" class="fa fa-linkedin"></a>
                 <a href="#" class="fa fa-twitter"></a>
                 <a href="#" class="fa fa-github"></a>
                 </div>
-                <div class="scroll_down">
+                <div class='scroll_down'>
                 <p>Scroll</p>
                 <span></span>
             </div>
@@ -169,13 +169,13 @@
     <!--Contact-->
     <div class="contact-wrapper" id="contact">
             <div class="contact">
-                <form class="form" action="">
+                <form class="form" action="" name="myForm" onsubmit="return validateForm()" method="POST">
                     <h1>Contact</h1>
                     <div class="form-bt">
-                        <input type="text" name="First Name" placeholder="First Name"  onfocus="this.placeholder=''" onblur="this.placeholder='First Name'">
+                        <input type="text" name="fname" placeholder="First Name"  onfocus="this.placeholder=''" onblur="this.placeholder='First Name'">
                     </div>
                     <div class="form-bt">
-                        <input type="text" name="Last Name" placeholder="Last Name" onfocus="this.placeholder=''" onblur="this.placeholder='Last Name'">
+                        <input type="text" name="lname" placeholder="Last Name" onfocus="this.placeholder=''" onblur="this.placeholder='Last Name'">
                     </div>
                     <div class="form-bt">
                         <input type="email" name="email" id="email" placeholder="Email Address" onfocus="this.placeholder=''" onblur="this.placeholder='Email Address'">
@@ -198,5 +198,8 @@
         <small>Copyright &copy; ADSchmidtOfficial</small>
     </div>
     <!--End Footer-->
+
+
+    <script src="JS/main.js" defer></script>
 </body>
 </html>
