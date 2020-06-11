@@ -3,6 +3,9 @@
     box-sizing: border-box;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .nav-wrapper {
     height: 5vh;
