@@ -1,17 +1,19 @@
 window.onload = function() {
-    const EFFECT = document.getElementById('headingName');
+    const effects = document.querySelectorAll('.headingScroll');
 
     window.addEventListener('scroll', scrollEffect);
     function scrollEffect() {
-        if(window.scrollY>100) {
-            EFFECT.classList.add('show');
+        effects.forEach(function(el){
+            if(window.scrollY>300) {
+                el.classList.add('show');
+            }
+            else {
+                el.classList.remove('show')
+                
+            }
+        });
         }
-        else {
-            EFFECT.classList.remove('show')
-            
-        }
-    }
-    scrollEffect();
+    scrollEffect('.headingScroll');
 }
 
 function validateForm() {

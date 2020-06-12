@@ -63,10 +63,13 @@ nav a:hover {
 #headingName {
     font-size: 4rem;
     text-shadow: 1px 1px 2px rgba(0,0,0,.5);
+}
+.headingScroll {
     opacity: 1;
     transition: 1s ease-in-out;
 }
-#headingName.show {
+
+.headingScroll.show {
     opacity: 0;
 
 }
@@ -197,6 +200,15 @@ flex-grow: 1;
 .skills ul, .languages ul {
     list-style-type: none;
 }
+.aboutScroll {
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+.aboutScroll.show {
+    opacity: 0;
+
+}
 /*Projects*/
 .projects-wrapper {
     position: relative;
@@ -228,6 +240,7 @@ font-size: 3rem;
     left: 50%;
     transform: translate(-50%, -15%);
     width: 90%;
+    height: 400px;
 }
 .card ul {
     list-style-type: none;
@@ -238,11 +251,12 @@ font-size: 3rem;
     background-color: rgba(2, 50, 88, 0.3);
     box-shadow:  -10px 0px 2px rgba(2, 50, 88, .5);
     transition: ease-in-out .5s;
+    
 }
 .card-wrapper:hover {
     height: 450px;
     width: 250px;
-    transform: scale(1.1);
+    transform: scale(1.1, 1.1);
     
 }
 .card {
