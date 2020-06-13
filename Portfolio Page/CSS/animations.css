@@ -77,11 +77,12 @@
 
 .fade-in {
     opacity: 0;
-    transition: opacity .5s ease-in;
+    transition: opacity 1s ease-in;
 }
 
 .fade-in.appear {
     opacity: 1;
+    transition: opacity 1s ease-in;
 }
 
 /*Keyframes*/

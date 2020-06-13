@@ -158,14 +158,16 @@ flex-grow: 1;
     position: absolute;
     width: 15rem;
     height: 25rem;
-    
-    transform: translate(0, 50%);
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
     box-shadow:  10px 0px 2px rgba(2, 50, 88, .3);
     border: 5px solid rgba(2, 50, 88, 0.5);
     background-color: rgba(13, 115, 199, .5);
 }
 .inner-languages.appear {
-    transform: translateX(-50%);
+    transform: translate(50%, -50%);
+    transition: transform 1s ease-in;
 }
 .inner-languages h3 {
     padding-top: 10px;
@@ -209,15 +211,7 @@ flex-grow: 1;
 .skills ul, .languages ul {
     list-style-type: none;
 }
-.aboutScroll {
-    opacity: 1;
-    transition: 1s ease-in-out;
-}
 
-.aboutScroll.show {
-    opacity: 0;
-
-}
 
 
 /*Projects*/

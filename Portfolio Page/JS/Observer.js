@@ -1,8 +1,8 @@
 const scrollFade = document.querySelectorAll(".fade-in");
 const sliders = document.querySelectorAll('.slideIn');
 const scrollOptions = {
-    threshold: 0,
-    rootMargin: "0px 0px -200px 0px"
+    threshold: .5,
+    rootMargin: "0px 0px -100px 0px"
 };
 const scrollObserver = new IntersectionObserver((entries, 
     scrollObserver) => {
