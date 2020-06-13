@@ -74,6 +74,16 @@
     margin: auto;
     animation: grow 2s infinite;
 }
+
+.fade-in {
+    opacity: 0;
+    transition: opacity .5s ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
 /*Keyframes*/
 @keyframes scroll {
     0% {
